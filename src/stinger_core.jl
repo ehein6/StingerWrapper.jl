@@ -202,7 +202,7 @@ function edgeweight(s::Stinger, src::Int64, dst::Int64, etype::Int64)
 end
 
 function dyno_set_initial_edges!(s::Stinger, edges::Array{Int64, 2})
-    stingeredges = transpose(edges)
+    stingeredges = edges
     ccall(
         dlsym(dyno_stinger_utils_lib, "dynograph_init_stinger_from_edge_list"),
         Void,

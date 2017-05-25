@@ -209,7 +209,7 @@ function dyno_set_initial_edges!(s::Stinger, edges::Array{Int64, 2})
         (Ptr{Void}, Ptr{Void}, Int64),
         s,
         stingeredges,
-        size(stingeredges,1)
+        size(stingeredges,2)
     )
 end
 
